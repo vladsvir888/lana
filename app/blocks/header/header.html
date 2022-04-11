@@ -34,13 +34,7 @@
         <a href="tel:+74955087645" class="header__phone">+7 (495) 508-76-45</a>
         <button class="header__call-btn">заказать звонок</button>
       </div>
-      <div class="header__search">
-        <button class="header__search-btn header__btn">
-          <svg class="header__btn-icon" viewBox="0 0 100 100">
-            <use xlink:href="./assets/images/sprite.svg#search"></use>
-          </svg>
-        </button>
-      </div>
+      @@include("blocks/search/search.html")
       <div class="header__basket">
         <button class="header__basket-btn header__btn">
           <svg class="header__btn-icon" viewBox="0 0 100 100">
@@ -49,17 +43,7 @@
         </button>
         <span class="header__basket-value">10</span>
       </div>
-      <div class="header__languages">
-        <button class="header__language-btn">
-          <span class="header__language-text">RU</span>
-          <img class="header__language-icon" src="./assets/images/icons/ru.png" alt="ru">
-          <button class="header__arrow-btn">
-            <svg class="header__arrow-icon" viewBox="0 0 100 100">
-              <use xlink:href="./assets/images/sprite.svg#arrow-bottom"></use>
-            </svg>
-          </button>
-        </button>
-      </div>
+      @@include("blocks/languages/languages.html")
     </div>
   </div>
 </header>

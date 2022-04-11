@@ -88,6 +88,11 @@ $font-family-2: 'Parkavenue', sans-serif;
   line-height: 3.8rem;
 
   @extend %ls-5;
+
+  @media (max-width: $sm) {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
 }
 
 %text-30 {
@@ -106,9 +111,31 @@ $font-family-2: 'Parkavenue', sans-serif;
   }
 }
 
+%text-39 {
+  font-size: 3.9rem;
+  line-height: 6.1rem;
+
+  @extend %ls-1;
+
+  @media (max-width: $lg) {
+    font-size: 1.8rem;
+  }
+}
+
 %text-41 {
   font-size: 4.1rem;
   line-height: 5.1rem;
+}
+
+%text-60 {
+  font-size: 6.3rem;
+  line-height: 6.1rem;
+
+  @extend %ls-1;
+
+  @media (max-width: $lg) {
+    font-size: 1.8rem;
+  }
 }
 
 %pos-center-x {

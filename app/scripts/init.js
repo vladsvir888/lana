@@ -1,5 +1,9 @@
-// app.yourScriptName.init();
+document.addEventListener('DOMContentLoaded', () => {
+  app.marquee.init();
+  app.search.init();
+  app.languageSelect.init();
 
-new WOW().init();
+  new WOW().init();
 
-new LazyLoad();
+  new LazyLoad();
+});

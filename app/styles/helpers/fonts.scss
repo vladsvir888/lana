@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Vanta';
+  src:
+    local('Vanta-Thin'),
+    local('Vanta-Thin'),
+    url('../../fonts/Vanta-Thin.woff2') format('woff2'),
+    url('../../fonts/Vanta-Thin.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vanta';
+  src:
+    local('Vanta-Regular'),
+    local('Vanta-Regular'),
+    url('../../fonts/Vanta-Regular.woff2') format('woff2'),
+    url('../../fonts/Vanta-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vanta';
+  src:
+    local('Vanta-Medium'),
+    local('Vanta-Medium'),
+    url('../../fonts/Vanta-Medium.woff2') format('woff2'),
+    url('../../fonts/Vanta-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parkavenue';
+  src:
+    local('Parkavenue-Regular'),
+    local('Parkavenue-Regular'),
+    url('../../fonts/Parkavenue-Regular.woff2') format('woff2'),
+    url('../../fonts/Parkavenue-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

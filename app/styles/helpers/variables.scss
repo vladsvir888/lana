@@ -125,6 +125,10 @@ $font-family-2: 'Parkavenue', sans-serif;
 %text-41 {
   font-size: 4.1rem;
   line-height: 5.1rem;
+
+  @media (max-width: $lg) {
+    font-size: 2rem;
+  }
 }
 
 %text-60 {

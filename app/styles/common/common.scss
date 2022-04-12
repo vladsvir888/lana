@@ -28,6 +28,7 @@ html {
   --gray2: #f0ebe7;
   --gray3: #afafaf;
   --gray4: #c4c4c4;
+  --gray5: #afafaf;
   --footer-bg: #2c2c2c;
 }
 
@@ -41,6 +42,7 @@ body {
   font-family: $font-family;
   font-size: 1.7rem;
   line-height: 2.3rem;
+  overflow-x: hidden;
 }
 
 a {
@@ -88,4 +90,22 @@ img {
   margin: -1px;
 
   clip: rect(0 0 0 0);
+}
+
+.section {
+  padding-bottom: 10rem;
+
+  @media (max-width: $lg) {
+    padding-bottom: 3rem;
+  }
+
+  &-title {
+    @extend %text-41;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+
+    @media (max-width: $sm) {
+      padding-bottom: 2rem;
+    }
+  }
 }

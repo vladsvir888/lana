@@ -19,6 +19,7 @@ html {
 :root {
   --black: #313131;
   --black2: #000;
+  --black3: #424242;
   --white: #fff;
   --brown: #c8b196;
   --brown2: #714615;
@@ -76,7 +77,6 @@ img {
 }
 
 .container {
-  // max-width: 117rem;
   max-width: 125rem;
   margin: 0 auto;
   padding: 0 1.6rem;

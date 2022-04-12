@@ -81,6 +81,10 @@ $font-family-2: 'Parkavenue', sans-serif;
   line-height: 3.1rem;
 
   @extend %ls-5;
+
+  @media (max-width: $lg) {
+    font-size: 1.5rem;
+  }
 }
 
 %text-25 {
@@ -89,7 +93,7 @@ $font-family-2: 'Parkavenue', sans-serif;
 
   @extend %ls-5;
 
-  @media (max-width: $sm) {
+  @media (max-width: $lg) {
     font-size: 2rem;
     line-height: 3.5rem;
   }

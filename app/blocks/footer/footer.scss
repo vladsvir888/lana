@@ -1,5 +1,184 @@
 .footer {
-  background: #ccc;
-  text-align: center;
-  padding: 10px;
+  position: relative;
+  padding: 2rem 0 1rem;
+  background-color: var(--footer-bg);
+  color: var(--white);
+
+  &__wrap {
+    display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // gap: 4rem 8rem;
+    grid-template-columns: 28.7rem repeat(2, max-content) 19rem;
+    gap: 2rem;
+    justify-content: space-between;
+
+    grid-template-areas:
+      "logo list-1 list-2 contacts"
+      "hr hr hr hr"
+      "add-info add-info add-info developer";
+
+    @media (max-width: $lg) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "logo list-1 list-2"
+        "hr . ."
+        "add-info contacts contacts"
+    }
+  }
+
+  &__item-inner {
+    > * {
+      &:not(:last-child) {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__logo {
+    width: 19.6rem;
+    height: 10.3rem;
+  }
+
+  &__title {
+    @extend %text-17;
+    text-transform: uppercase;
+    padding-bottom: 3.2rem;
+  }
+
+  &__list {
+    > * {
+      &:not(:last-child) {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__text {
+    @extend %text-13;
+  }
+
+  &__link {
+    @extend %text-15;
+  }
+
+  &__developer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__developer-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--white);
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  a {
+    display: flex;
+    color: var(--white);
+  }
+
+  &__add-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    grid-area: add-info;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__pay {
+    display: flex;
+    align-items: center;
+
+    > * {
+      &:not(:last-child) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  &__pay-img {
+    flex-shrink: 0;
+
+    &--mastercard {
+      width: 3rem;
+      height: 2rem;
+    }
+
+    &--maestro {
+      width: 3rem;
+      height: 2rem;
+    }
+
+    &--visa {
+      width: 3.5rem;
+      height: 1rem;
+    }
+
+    &--mir {
+      width: 3.8rem;
+      height: 1rem;
+    }
+  }
+
+  &__developer-item {
+    @media (min-width: 1025px) {
+      grid-area: developer;
+    }
+
+    @media (max-width: $lg) {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      max-width: 11rem;
+    }
+  }
+
+  &__developer-span {
+    margin-right: 0.6rem;
+
+    @media (max-width: $lg) {
+      text-align: right;
+    }
+  }
+
+  &__logo-block {
+    grid-area: logo;
+  }
+
+  &__first-list {
+    grid-area: list-1;
+  }
+
+  &__second-list {
+    grid-area: list-2;
+  }
+
+  &__contacts {
+    grid-area: contacts;
+  }
+
+  &__hr {
+    grid-area: hr;
+    background: var(--black3);
+    border: none;
+    height: 0.1rem;
+  }
+
+  &__contacts-inner {
+    @media (max-width: $lg) {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+    }
+  }
 }

@@ -6,6 +6,20 @@ app.burgerMenu = {
 
     if (burger === null) return;
 
+    function toggle(item) {
+      item.classList.toggle('is-active');
+
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        const subList = item.lastElementChild;
+
+        if (subList.style.maxHeight) {
+          subList.style.maxHeight = null;
+        } else {
+          subList.style.maxHeight = `${subList.scrollHeight}px`;
+        }
+      }
+    }
+
     burger.addEventListener('click', () => {
       burgerMenu.classList.toggle('is-active');
     });
@@ -13,25 +27,17 @@ app.burgerMenu = {
     burgerMenu.addEventListener('click', (e) => {
       const { target } = e;
 
-      if (!target.classList.contains('burger-menu__item')) return;
+      const parent = target.closest('.burgerItem');
 
-      const submenu = target.querySelector('.burger-menu__sublist');
+      if (parent === null) return;
 
-      if (submenu === null) return;
+      const activeItem = document.querySelector('.burgerItem.is-active');
 
-      if (target.contains(submenu)) {
-        target.classList.toggle('is-active');
+      if (activeItem && activeItem !== parent) {
+        toggle(activeItem);
       }
 
-      // if (target.contains('ul')) {
-      //   target.classList.toggle('is-active');
-      // }
-
-      // const lastElementChild = target.lastElementChild;
-
-      // if (lastElementChild === null) return;
-
-      // lastElementChild.classList.toggle('is-active');
+      toggle(parent);
     });
   },
 };

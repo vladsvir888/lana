@@ -5,6 +5,7 @@
     @extend %text-10;
     display: flex;
     align-items: center;
+    grid-area: languages;
   }
 
   &__language-btn {

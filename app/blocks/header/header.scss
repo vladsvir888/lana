@@ -2,98 +2,46 @@
   background: var(--brown-gradient);
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: max-content 1fr repeat(2, max-content) repeat(2, 4.8rem) max-content;
+    gap: 2rem;
+    grid-template-areas: "logo burger text cb-btns search basket languages";
     align-items: center;
-    flex-wrap: wrap;
     padding: 0.8rem 1.6rem;
-  }
-
-  &__start {
-    display: flex;
-    align-items: center;
-
-    > * {
-      &:not(:last-child) {
-        margin-right: 2.3rem;
-
-        @media (max-width: $md) {
-          margin-right: 0;
-        }
-
-        @media (max-width: $sm) {
-          margin-right: 2.3rem;
-        }
-      }
-    }
 
     @media (max-width: $md) {
-      width: 100%;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-    }
-  }
-
-  &__end {
-    display: flex;
-    align-items: center;
-
-    > * {
-      &:not(:last-child) {
-        margin-right: 2.3rem;
-
-        @media (max-width: $sm) {
-          margin-right: 0;
-        }
-      }
+      grid-template-columns: max-content 1fr repeat(3, max-content);
+      grid-template-areas:
+        "logo text text text languages"
+        "burger . cb-btns search basket";
     }
 
-    @media (max-width: $md) {
-      width: 100%;
-      justify-content: center;
-
-      @media (max-width: $sm) {
-        justify-content: space-between;
-      }
+    @media (max-width: $sm) {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.8rem;
+      grid-template-areas:
+        "logo logo text text text"
+        "burger cb-btns search basket languages";
     }
   }
 
   &__logo {
     width: 14rem;
     height: 7.4rem;
+    grid-area: logo;
 
     @media (max-width: $lg) {
       width: 9.6rem;
       height: 5.1rem;
     }
-
-    @media (max-width: $md) {
-      order: 0;
-    }
   }
 
   &__burger-wrap {
-    position: relative; //
+    position: relative;
     padding: 0.5rem;
     background-color: var(--gray2);
     border-radius: 0.3rem;
-
-    @media (max-width: $md) {
-      order: 2;
-    }
-
-    @media (max-width: $sm) {
-      display: none;
-    }
-
-    &--bottom {
-      display: none;
-
-      @media (max-width: $sm) {
-        display: block;
-        order: unset;
-      }
-    }
+    grid-area: burger;
   }
 
   &__burger-inner {
@@ -136,7 +84,7 @@
     text-transform: uppercase;
     padding-left: 1rem;
 
-    @media (max-width: $md) {
+    @media (max-width: $sm) {
       display: none;
     }
   }
@@ -146,14 +94,11 @@
     font-family: $font-family-2;
     color: var(--brown2);
     font-weight: 700;
+    grid-area: text;
 
     @media (max-width: $lg) {
       max-width: 20rem;
       color: var(--white);
-    }
-
-    @media (max-width: $md) {
-      order: 1;
     }
 
     @media (max-width: $sm) {
@@ -165,6 +110,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    grid-area: cb-btns;
   }
 
   &__phone {
@@ -221,6 +167,7 @@
 
   &__basket {
     position: relative;
+    grid-area: basket;
   }
 
   &__basket-value {

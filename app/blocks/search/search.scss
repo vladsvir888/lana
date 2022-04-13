@@ -1,6 +1,7 @@
 .header {
   &__search {
     position: relative;
+    grid-area: search;
   }
 
   &__search-form {

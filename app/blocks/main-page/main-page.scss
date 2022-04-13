@@ -310,17 +310,46 @@
     border: none;
   }
 
-  &__callback-info {
+  &__callback-wrap {
+    padding: 0.3rem;
     position: absolute;
     top: -12rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 117rem;
     background: var(--brown-gradient);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0% 90%);
+
+    @media (max-width: $md) {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 70% 90%, 50% 95%, 30% 90%, 0% 90%);
+    }
+  }
+
+  &__callback-info {
+    // position: absolute;
+    // top: -12rem;
+    // left: 50%;
+    // transform: translateX(-50%);
+    width: 117rem;
+    background: var(--white);
     padding: 6rem;
     display: flex;
     justify-content: center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0% 90%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.4rem;
+      left: 0.4rem;
+      right: 0.4rem;
+      bottom: 0.4rem;
+      background: var(--brown-gradient);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0% 90%);
+
+      @media (max-width: $md) {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 70% 90%, 50% 95%, 30% 90%, 0% 90%);
+      }
+    }
 
     @media (max-width: $md) {
       clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 70% 90%, 50% 95%, 30% 90%, 0% 90%);

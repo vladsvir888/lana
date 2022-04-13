@@ -6,12 +6,9 @@
 
   &__wrap {
     display: grid;
-    // grid-template-columns: repeat(4, 1fr);
-    // gap: 4rem 8rem;
     grid-template-columns: 28.7rem repeat(2, max-content) 19rem;
     gap: 2rem;
     justify-content: space-between;
-
     grid-template-areas:
       "logo list-1 list-2 contacts"
       "hr hr hr hr"
@@ -23,6 +20,28 @@
         "logo list-1 list-2"
         "hr . ."
         "add-info contacts contacts"
+    }
+
+    @media (max-width: $md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "logo add-info"
+        "hr hr"
+        "list-1 list-2"
+        "contacts contacts";
+    }
+
+    @media (max-width: $sm) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "logo"
+        "list-1"
+        "list-2"
+        "contacts"
+        "hr"
+        "add-info"
+        "developer";
+      text-align: center;
     }
   }
 
@@ -79,6 +98,11 @@
   a {
     display: flex;
     color: var(--white);
+
+    @media (max-width: $sm) {
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__add-info {
@@ -91,6 +115,20 @@
     @media (max-width: $lg) {
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    @media (max-width: $md) {
+      justify-content: start;
+
+      > * {
+        &:not(:last-child) {
+          padding-bottom: 3rem;
+        }
+      }
+    }
+
+    @media (max-width: $sm) {
+      align-items: center;
     }
   }
 
@@ -142,6 +180,12 @@
       line-height: 1.5rem;
       max-width: 11rem;
     }
+
+    @media (max-width: $sm) {
+      grid-area: developer;
+      position: static;
+      max-width: 100%;
+    }
   }
 
   &__developer-span {
@@ -179,6 +223,10 @@
     @media (max-width: $lg) {
       display: grid;
       grid-template-columns: repeat(2, max-content);
+    }
+
+    @media (max-width: $sm) {
+      display: unset;
     }
   }
 }

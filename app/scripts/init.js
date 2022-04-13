@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   app.search.init();
   app.languageSelect.init();
   app.tabs.init();
+  app.burgerMenu.init();
 
   new WOW().init();
 

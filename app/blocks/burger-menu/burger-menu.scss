@@ -1,0 +1,98 @@
+.burger-menu {
+  position: absolute;
+  // top: 2rem;
+  // top: 100%;
+  top: 8rem;
+  left: 0;
+  z-index: 1;
+  width: 31rem;
+  color: var(--black);
+  background-color: var(--gray);
+  box-shadow: 0 2.4rem 4.4rem rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  // clip-path: polygon(0% 10%, 50% 10%, 55% 9%, 60% 10%, 100% 10%, 100% 100%, 0% 100%);
+
+  &__wrap {
+    padding: 2.5rem;
+  }
+
+  &__list {
+    @extend %text-13;
+    text-transform: uppercase;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 1.7rem 5.5rem 1.7rem 1.5rem;
+    box-shadow: 0 0.5rem 1.9rem rgba(0, 0, 0, 0.03);
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      right: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url('../../assets/images/sprite-icons/arrow-menu.svg') no-repeat 50% / contain;
+      content: '';
+      transition: all 0.3s;
+    }
+  }
+
+  &__text {
+    margin-right: 3.5rem;
+  }
+
+  &__sublist {
+    position: absolute;
+    top: 0;
+    right: -21rem;
+    background-color: var(--gray);
+    padding: 1rem 2rem;
+    @extend %text-10;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+
+    > * {
+      &:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  &__sublink {
+    color: var(--greige);
+  }
+}
+
+.burger-menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+// .burger-menu__sublist.is-active {
+//   opacity: 1;
+//   pointer-events: auto;
+// }
+
+.burger-menu__item.is-active {
+  &::after {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  
+  .burger-menu__sublist {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

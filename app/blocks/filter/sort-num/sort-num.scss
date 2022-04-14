@@ -1,0 +1,30 @@
+.sort-num {
+  display: flex;
+  align-items: center;
+
+  > * {
+    &:not(:last-child) {
+      padding-right: 1.5rem;
+    }
+  }
+
+  &__label {
+    position: relative;
+    color: var(--gray6);
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '/';
+      }
+    }
+  }
+}
+
+.sort-num__input:checked + span {
+  color: var(--black);
+}

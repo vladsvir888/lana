@@ -1,0 +1,170 @@
+.card {
+  position: relative;
+  padding: 1.8rem 2rem 4rem;
+  background: var(--gray);
+  box-shadow: 0 2.4rem 4.4rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    .card__title {
+      color: var(--brown);
+    }
+  }
+
+  @media (max-width: $md) {
+    padding: 1.8rem 1.5rem 4rem;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  picture {
+    display: block;
+  }
+
+  &__wrap {
+    padding-bottom: 3.1rem;
+
+    > * {
+      &:not(:last-child) {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__img {
+    @extend %cover;
+  }
+
+  &__title {
+    @extend %text-13;
+    max-width: 16rem;
+    margin: 0 auto;
+    transition: color 0.3s;
+  }
+
+  &__old-price {
+    @extend %text-13;
+    color: var(--gray3);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 4.2rem;
+      height: 0.2rem;
+      transform: translateY(-50%) rotate(-8deg);
+      background-color: var(--black);
+      content: '';
+    }
+  }
+
+  &__current-price {
+    @extend %text-20;
+  }
+
+  &__discount {
+    border: 0.1rem solid var(--gray5);
+    padding: 0.1rem 0.5rem;
+  }
+
+  &__currency-old {
+    fill: var(--gray5);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &__currency-current {
+    fill: var(--black);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__first-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+      &:not(:last-child) {
+        padding-right: 1.2rem;
+      }
+    }
+  }
+
+  &__second-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -2rem;
+
+    > * {
+      margin-bottom: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  // basket
+  &__basket {
+    background: var(--brown-gradient);
+    border: none;
+    padding: 0.8rem 2.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.4rem 3.4rem rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+
+  &__basket-icon {
+    fill: var(--white);
+    width: 2rem;
+    height: 2rem;
+  }
+
+  // filter plus-minus
+  &__filter {
+    padding: 0.5rem 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @extend %text-20;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--gray5);
+  }
+
+  &__filter-value {
+    padding: 0 1rem;
+    margin: 0 1rem;
+    border-left: 1px solid var(--gray5);
+    border-right: 1px solid var(--gray5);
+  }
+
+  &__filter-btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__plus-icon,
+  &__minus-icon {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--black);
+  }
+}

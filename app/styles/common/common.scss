@@ -30,6 +30,7 @@ html {
   --gray3: #afafaf;
   --gray4: #c4c4c4;
   --gray5: #afafaf;
+  --gray6: #dbdbdb;
   --footer-bg: #2c2c2c;
 }
 
@@ -108,4 +109,32 @@ img {
       padding-bottom: 2rem;
     }
   }
+}
+
+.slider-btns {
+  display: flex;
+  align-items: center;
+
+  > * {
+    &:not(:last-child) {
+      margin-right: 4rem;
+
+      @media (max-width: $sm) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__arrow {
+    width: 6.1rem;
+    height: 5rem;
+  }
+}
+
+.input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
 }

@@ -1,0 +1,20 @@
+.sort-price {
+  display: flex;
+  align-items: center;
+
+  > * {
+    &:not(:last-child) {
+      padding-right: 1.8rem;
+    }
+  }
+
+  &__icon {
+    width: 2.7rem;
+    height: 2.7rem;
+    fill: var(--gray6);
+  }
+}
+
+.sort-price__input:checked + .sort-price__icon {
+  fill: var(--black);
+}

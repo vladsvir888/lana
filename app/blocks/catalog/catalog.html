@@ -1,0 +1,61 @@
+<main class="catalog-page">
+  <div class="container">
+    @@include("blocks/breadcrumbs/breadcrumbs.html")
+  </div>
+  <section class="catalog-page__catalog-section section">
+    <div class="container">
+      <h1 class="catalog-page__title section-title">Мужская куртка</h1>
+      @@include("blocks/cards-wrap/cards-wrap.html", {
+        "classSlider": "cardSlider1",
+        "typeHeader": "first",
+        "classSliderWrap": "",
+      })
+    </div>
+  </section>
+  <div class="param-filter">
+    <div class="container">
+      <form class="param-filter__form" action="/">
+        <div class="param-filter__top">
+          <div class="param-filter__top-start">
+            <div class="param-filter__title">фильтр по параметрам</div>
+          </div>
+          <div class="param-filter__top-end">
+            @@include("blocks/filter/sort-num/sort-num.html")
+            @@include("blocks/filter/sort-price/sort-price.html")
+          </div>
+        </div>
+        <div class="param-filter__bottom">
+          @@include("blocks/filter/sort-size/sort-size.html", {
+            "title": "Выберите размер",
+            "type": "size",
+          })
+          @@include("blocks/filter/sort-size/sort-size.html", {
+            "title": "Выберите рост",
+            "type": "growth"
+          })
+          <div class="param-filter__show-more">
+            <span class="param-filter__line-prev"></span>
+            <button class="param-filter__more-btn">развернуть все параметры</button>
+            <span class="param-filter__line-next"></span>
+          </div>
+          @@include("blocks/cards-wrap/cards-wrap.html", {
+            "classSlider": "cardSlider1",
+            "classSliderWrap": "cards-wrap__slider-wrap",
+            "typeHeader": "second",
+          })
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <section class="catalog-page__info">
+    <div class="container">
+      <h2 class="section-title">Информация для покупателя</h2>
+      @@include("blocks/tabs/tabs.html", {
+        "class": "tabs--pb-18",
+      })
+      @@include("blocks/marquee/marquee.html")
+    </div>
+  </section>
+  @@include("blocks/map/map.html")
+</main>

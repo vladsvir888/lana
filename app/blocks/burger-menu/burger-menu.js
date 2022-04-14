@@ -22,6 +22,10 @@ app.burgerMenu = {
 
     burger.addEventListener('click', () => {
       burgerMenu.classList.toggle('is-active');
+
+      burger.classList.toggle('is-active');
+
+      document.querySelectorAll('.burgerItem.is-active').forEach((item) => item.classList.remove('is-active'));
     });
 
     burgerMenu.addEventListener('click', (e) => {

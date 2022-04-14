@@ -1,0 +1,105 @@
+<div class="cards-wrap swiper @@classSlider">
+
+  @@if (typeHeader === "first") {
+    <div class="cards-wrap__header">
+      <div class="cards-wrap__text">
+        <svg class="cards-wrap__percent-icon" viewBox="0 0 100 100">
+          <use xlink:href="./assets/images/sprite.svg#percent"></use>
+        </svg>
+        <span>Акции</span>
+      </div>
+      <div class="slider-btns">
+        <div class="swiper-button-prev">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-prev.png" alt="img">
+        </div>
+        <div class="swiper-button-next">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-next.png" alt="img">
+        </div>
+      </div>
+    </div>
+  }
+
+  @@if (typeHeader === "second") {
+    <div class="cards-wrap__header cards-wrap__second-header">
+      <div class="slider-btns">
+        <div class="swiper-button-prev">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-prev.png" alt="img">
+        </div>
+        <div class="swiper-button-next">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-next.png" alt="img">
+        </div>
+      </div>
+    </div>
+  }
+
+  <div class="@@if(!classSliderWrap){swiper-wrapper}@@if(classSliderWrap){swiper-wrapper @@classSliderWrap}">
+    @@loop("blocks/card/card.html", [
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+      {
+        "jpgImg": "./assets/images/card-img.jpg",
+        "webpImg": "./assets/images/card-img.webp",
+        "title": "Мужская курта (скандинавка бежовая) с&nbsp;капюшоном",
+        "oldPrice": "10 119",
+        "currentPrice": "8 000",
+        "discount": "-10%",
+      },
+    ])
+  </div>
+  <div class="swiper-pagination"></div>
+</div>

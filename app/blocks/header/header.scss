@@ -65,6 +65,7 @@
     background: var(--black);
     display: block;
     height: 0.1rem;
+    transition: all 0.3s;
 
     &--top {
       width: 1.7rem;
@@ -181,5 +182,22 @@
     border: 0.1rem solid var(--brown);
 
     @extend %text-10;
+  }
+}
+
+.header__burger-inner.is-active {
+  .header__burger-item {
+    &:first-child {
+      transform: translateY(0.5rem) rotate(-45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:last-child {
+      width: 1.7rem;
+      transform: translateY(-0.5rem) rotate(45deg);
+    }
   }
 }

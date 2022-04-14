@@ -1,0 +1,47 @@
+<div class="swiper-slide">
+  <article class="card">
+    <a href="#" class="card__link"></a>
+    <div class="card__wrap">
+      <picture>
+        <source srcset="./assets/images/pixel.png" data-srcset="@@webpImg" type="image/webp">
+        <img class="card__img lazy" src="./assets/images/pixel.png" data-src="@@jpgImg" alt="img">
+      </picture>
+      <h2 class="card__title">@@title</h2>
+      <div class="card__first-inner">
+        <span class="card__old-price">
+          @@oldPrice
+          <svg class="card__currency-old" viewBox="0 0 100 100">
+            <use xlink:href="./assets/images/sprite.svg#currency"></use>
+          </svg>
+        </span>
+        <span class="card__discount">@@discount</span>
+      </div>
+      <span class="card__current-price">
+        @@currentPrice
+        <svg class="card__currency-current" viewBox="0 0 100 100">
+          <use xlink:href="./assets/images/sprite.svg#currency"></use>
+        </svg>
+      </span>
+    </div>
+    <div class="card__second-inner">
+      <div class="card__filter">
+        <button class="card__filter-btn card__filter-minus">
+          <svg class="card__minus-icon" viewBox="0 0 100 100">
+            <use xlink:href="./assets/images/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <span class="card__filter-value">1</span>
+        <button class="card__filter-btn card__filter-plus">
+          <svg class="card__plus-icon" viewBox="0 0 100 100">
+            <use xlink:href="./assets/images/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div>
+      <button class="card__basket">
+        <svg class="card__basket-icon" viewBox="0 0 100 100">
+          <use xlink:href="./assets/images/sprite.svg#basket-2"></use>
+        </svg>
+      </button>
+    </div>
+  </article>
+</div>

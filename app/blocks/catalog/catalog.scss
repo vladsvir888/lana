@@ -1,0 +1,10 @@
+.catalog-page {
+  &__info {
+    position: relative;
+    margin-bottom: 24rem;
+
+    @media (max-width: $md) {
+      margin-bottom: 15rem;
+    }
+  }
+}

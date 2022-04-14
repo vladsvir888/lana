@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   app.languageSelect.init(); // blocks/languages
   app.tabs.init(); // blocks/tabs
   app.burgerMenu.init(); // blocks/burger-menu
-  app.catalogSliders.init(); // blocks/cards-wrap
+  app.cardSliders.init(); // blocks/cards-wrap
+  app.mobileCardSlider.init(); // blocks/cards-wrap
+  app.showMoreParam.init(); // blocks/dropdown
+  app.filterPlusMinus.init(); // blocks/filterPlusMinus
 
   new WOW().init();
 

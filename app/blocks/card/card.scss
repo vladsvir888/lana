@@ -144,6 +144,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     @extend %text-20;
     border-radius: 0.5rem;
     border: 0.1rem solid var(--gray5);
@@ -156,7 +157,8 @@
     border-right: 1px solid var(--gray5);
   }
 
-  &__filter-btn {
+  &__minus-btn,
+  &__plus-btn {
     border: none;
     background-color: transparent;
   }

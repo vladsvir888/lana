@@ -58,3 +58,72 @@
     </div>
   </div>
 }
+
+@@if (type === "help") {
+  <div class="sort-check">
+    <div class="sort-check__title">@@title</div>
+    <div class="sort-check__wrap">
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">экотовары</span>
+      </label>
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">товары благотворительных фондов</span>
+      </label>
+    </div>
+  </div>
+}
+
+@@if (type === "style") {
+  <div class="sort-check">
+    <div class="sort-check__title">@@title</div>
+    <div class="sort-check__wrap">
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">деловой</span>
+      </label>
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">повседневный</span>
+      </label>
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">спортивный</span>
+      </label>
+    </div>
+  </div>
+}
+
+@@if (type === "pattern") {
+  <div class="sort-check">
+    <div class="sort-check__title">@@title</div>
+    <div class="sort-check__wrap">
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">геометрия</span>
+      </label>
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">полоска</span>
+      </label>
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">однотонный</span>
+      </label>
+      <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">клетка</span>
+      </label>
+    </div>
+  </div>
+}

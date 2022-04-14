@@ -33,19 +33,32 @@
             "title": "Выберите рост",
             "type": "growth"
           })
+          <div class="param-filter__hide-param">
+            @@include("blocks/filter/sort-size/sort-size.html", {
+              "title": "Помогаю планете",
+              "type": "help",
+            })
+            @@include("blocks/filter/sort-size/sort-size.html", {
+              "title": "Стиль",
+              "type": "style"
+            })
+            @@include("blocks/filter/sort-size/sort-size.html", {
+              "title": "Узор",
+              "type": "pattern"
+            })
+          </div>
           <div class="param-filter__show-more">
             <span class="param-filter__line-prev"></span>
-            <button class="param-filter__more-btn">развернуть все параметры</button>
+            <button class="param-filter__more-btn filterMoreBtn" type="button">развернуть все параметры</button>
             <span class="param-filter__line-next"></span>
           </div>
-          @@include("blocks/cards-wrap/cards-wrap.html", {
-            "classSlider": "cardSlider1",
-            "classSliderWrap": "cards-wrap__slider-wrap",
-            "typeHeader": "second",
-          })
         </div>
       </form>
-
+      @@include("blocks/cards-wrap/cards-wrap.html", {
+        "classSlider": "cardSlider2",
+        "classSliderWrap": "cards-wrap__slider-wrap",
+        "typeHeader": "second",
+      })
     </div>
   </div>
   <section class="catalog-page__info">

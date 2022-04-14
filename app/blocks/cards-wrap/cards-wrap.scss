@@ -19,6 +19,11 @@
     background: var(--gray3);
   }
 
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.5rem;
+  }
+
   .swiper-pagination-bullet-active {
     background: var(--gray2);
     border-radius: 50%;
@@ -51,6 +56,10 @@
   &__second-header {
     justify-content: flex-end;
     display: none;
+
+    @media (max-width: $lg) {
+      display: flex;
+    }
   }
 
   &__text {
@@ -59,7 +68,7 @@
     background-color: var(--greige);
     display: flex;
     align-items: center;
-    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%,  0% 100%);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
     padding: 1rem 4rem 1rem 3rem;
 
     @media (max-width: $sm) {
@@ -83,7 +92,13 @@
     @media (min-width: 1025px) {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 5.6rem 3rem;
+      gap: 3rem;
     }
+  }
+}
+
+.cardSlider2 .swiper-pagination {
+  @media (min-width: 1025px) {
+    display: none;
   }
 }

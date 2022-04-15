@@ -9,12 +9,6 @@
   align-items: center;
   text-align: center;
 
-  &:hover {
-    .card__title {
-      color: var(--brown);
-    }
-  }
-
   @media (max-width: $md) {
     padding: 1.8rem 1.5rem 4rem;
   }
@@ -49,7 +43,6 @@
     @extend %text-13;
     max-width: 16rem;
     margin: 0 auto;
-    transition: color 0.3s;
   }
 
   &__old-price {
@@ -116,57 +109,5 @@
         margin-right: 2rem;
       }
     }
-  }
-
-  // basket
-  &__basket {
-    background: var(--brown-gradient);
-    border: none;
-    padding: 0.8rem 2.2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1.4rem 3.4rem rgba(0, 0, 0, 0.25);
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: translateY(-0.2rem);
-    }
-  }
-
-  &__basket-icon {
-    fill: var(--white);
-    width: 2rem;
-    height: 2rem;
-  }
-
-  // filter plus-minus
-  &__filter {
-    padding: 0.5rem 1.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @extend %text-20;
-    border-radius: 0.5rem;
-    border: 0.1rem solid var(--gray5);
-  }
-
-  &__filter-value {
-    padding: 0 1rem;
-    margin: 0 1rem;
-    border-left: 1px solid var(--gray5);
-    border-right: 1px solid var(--gray5);
-  }
-
-  &__minus-btn,
-  &__plus-btn {
-    border: none;
-    background-color: transparent;
-  }
-
-  &__plus-icon,
-  &__minus-icon {
-    width: 1rem;
-    height: 1rem;
-    fill: var(--black);
   }
 }

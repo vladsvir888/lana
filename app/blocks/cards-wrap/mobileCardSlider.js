@@ -4,6 +4,8 @@ app.mobileCardSlider = {
     let cardSlider2 = null;
 
     function initCardSlider2() {
+      if (!document.querySelector('.cardSlider2')) return;
+
       if (!cardSlider2) {
         cardSlider2 = new Swiper('.cardSlider2', {
           slidesPerView: 1,

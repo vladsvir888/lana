@@ -53,6 +53,11 @@
     }
   }
 
+  &__header-title {
+    @extend %text-41;
+    text-transform: uppercase;
+  }
+
   &__second-header {
     justify-content: flex-end;
     display: none;
@@ -60,6 +65,17 @@
     @media (max-width: $lg) {
       display: flex;
     }
+  }
+
+  &__third-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__fourth-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
   }
 
   &__text {

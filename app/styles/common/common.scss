@@ -120,7 +120,7 @@ img {
       margin-right: 4rem;
 
       @media (max-width: $sm) {
-        margin-right: 1rem;
+        margin-right: 2rem;
       }
     }
   }
@@ -137,4 +137,53 @@ img {
   overflow: hidden;
   position: absolute;
   clip: rect(0 0 0 0);
+}
+
+.counter {
+  padding: 0.5rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--gray5);
+  @extend %text-20;
+
+  &__minus-btn,
+  &__plus-btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__value {
+    padding: 0 1rem;
+    margin: 0 1rem;
+    border-left: 1px solid var(--gray5);
+    border-right: 1px solid var(--gray5);
+  }
+
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--black);
+    pointer-events: none;
+  }
+}
+
+.basket {
+  background: var(--brown-gradient);
+  border: none;
+  padding: 0.8rem 2.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.4rem 3.4rem rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-0.2rem);
+  }
+
+  &__icon {
+    fill: var(--white);
+    width: 2rem;
+    height: 2rem;
+  }
 }

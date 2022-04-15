@@ -31,6 +31,47 @@
   </div>
 }
 
+@@if (type === "size2") {
+  <div class="sort-check sort-check--2">
+    <div class="sort-check__header">
+      <div class="sort-check__title sort-check__second-title">@@title</div>
+      <a href="#" class="sort-check__link">
+        <svg class="sort-check__link-icon" viewBox="0 0 100 100">
+          <use xlink:href="./assets/images/sprite.svg#table-icon"></use>
+        </svg>
+        <span class="sort-check__span-text">Таблица размеров</span>
+      </a>
+    </div>
+    <div class="sort-check__wrap sort-check__second-wrap">
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">М(46)</span>
+      </label>
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">L(48)</span>
+      </label>
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">XL(50)</span>
+      </label>
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">XXL(52)</span>
+      </label>
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">XXXL(54)</span>
+      </label>
+    </div>
+  </div>
+}
+
 @@if (type === "growth") {
   <div class="sort-check">
     <div class="sort-check__title">@@title</div>
@@ -51,6 +92,34 @@
         <span class="sort-check__check-text">182</span>
       </label>
       <label class="sort-check__label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">188</span>
+      </label>
+    </div>
+  </div>
+}
+
+@@if (type === "growth2") {
+  <div class="sort-check sort-check--2">
+    <div class="sort-check__title sort-check__second-title">@@title</div>
+    <div class="sort-check__wrap sort-check__second-wrap">
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">170</span>
+      </label>
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">176</span>
+      </label>
+      <label class="sort-check__label sort-check__second-label">
+        <input class="sort-check__input input" type="checkbox">
+        <span class="sort-check__check-style"></span>
+        <span class="sort-check__check-text">182</span>
+      </label>
+      <label class="sort-check__label sort-check__second-label">
         <input class="sort-check__input input" type="checkbox">
         <span class="sort-check__check-style"></span>
         <span class="sort-check__check-text">188</span>
@@ -123,6 +192,38 @@
         <input class="sort-check__input input" type="checkbox">
         <span class="sort-check__check-style"></span>
         <span class="sort-check__check-text">клетка</span>
+      </label>
+    </div>
+  </div>
+}
+
+@@if (type === "colors") {
+  <div class="sort-check sort-check--2">
+    <div class="sort-check__title sort-check__second-title">@@title</div>
+    <div class="sort-check__wrap sort-check__second-wrap">
+      <label>
+        <input class="sort-check__input input" type="checkbox">
+        <div class="sort-check__img-wrap">
+          <img src="./assets/images/pixel.png" data-src="./assets/images/icons/color1.png" class="lazy" alt="img">
+        </div>
+      </label>
+      <label>
+        <input class="sort-check__input input" type="checkbox">
+        <div class="sort-check__img-wrap">
+          <img src="./assets/images/pixel.png" data-src="./assets/images/icons/color2.png" class="lazy" alt="img">
+        </div>
+      </label>
+      <label>
+        <input class="sort-check__input input" type="checkbox">
+        <div class="sort-check__img-wrap">
+          <img src="./assets/images/pixel.png" data-src="./assets/images/icons/color3.png" class="lazy" alt="img">
+        </div>
+      </label>
+      <label>
+        <input class="sort-check__input input" type="checkbox">
+        <div class="sort-check__img-wrap">
+          <img src="./assets/images/pixel.png" data-src="./assets/images/icons/color4.png" class="lazy" alt="img">
+        </div>
       </label>
     </div>
   </div>

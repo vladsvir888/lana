@@ -5,11 +5,41 @@
     }
   }
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__title {
     color: var(--gray5);
     text-transform: uppercase;
 
     @extend %text-20;
+  }
+
+  .sort-check__second-title {
+    @extend %text-14;
+    color: var(--black);
+  }
+
+  &__link-icon {
+    width: 2.1rem;
+    height: 2.1rem;
+    fill: var(--gray3);
+    margin-right: 0.8rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: var(--gray3);
+
+    @extend %text-11;
+    text-transform: uppercase;
+  }
+
+  &__span-text {
+    border-bottom: 0.1rem dashed var(--gray3);
   }
 
   &__wrap {
@@ -31,6 +61,18 @@
     }
   }
 
+  &__second-wrap {
+    margin-bottom: 1rem;
+
+    > * {
+      margin-bottom: 1rem;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
   &__label {
     display: flex;
     justify-content: center;
@@ -41,6 +83,13 @@
     border: 0.2rem solid var(--gray2);
     text-align: center;
     padding: 0.5rem 2rem;
+    gap: 1rem;
+  }
+
+  &__second-label {
+    border-radius: 1rem;
+    flex-direction: row-reverse;
+    min-width: 8rem;
   }
 
   &__check-style {
@@ -49,7 +98,6 @@
     width: 1.8rem;
     height: 1.8rem;
     border: 0.2rem solid var(--greige);
-    margin-right: 1.3rem;
   }
 
   &__check-text {
@@ -57,6 +105,20 @@
     text-align: left;
 
     @extend %text-13;
+  }
+
+  &__img-wrap {
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+  }
+}
+
+.sort-check--2 {
+  > * {
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+    }
   }
 }
 
@@ -80,4 +142,8 @@
 
 .sort-check__input:checked ~ .sort-check__check-text {
   color: var(--black);
+}
+
+.sort-check__input:checked + .sort-check__img-wrap {
+  border: 0.1rem solid var(--gray3);
 }

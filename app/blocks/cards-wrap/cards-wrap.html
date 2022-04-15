@@ -32,6 +32,33 @@
     </div>
   }
 
+  @@if (typeHeader === "third") {
+    <div class="cards-wrap__header cards-wrap__third-header">
+      <div class="slider-btns">
+        <div class="swiper-button-prev">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-prev.png" alt="img">
+        </div>
+        <div class="swiper-button-next">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-next.png" alt="img">
+        </div>
+      </div>
+    </div>
+  }
+
+  @@if (typeHeader === "fourth") {
+    <div class="cards-wrap__header cards-wrap__fourth-header">
+      <h2 class="cards-wrap__header-title">Похожие товары</h2>
+      <div class="slider-btns">
+        <div class="swiper-button-prev">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-prev.png" alt="img">
+        </div>
+        <div class="swiper-button-next">
+          <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-next.png" alt="img">
+        </div>
+      </div>
+    </div>
+  }
+
   <div class="@@if(!classSliderWrap){swiper-wrapper}@@if(classSliderWrap){swiper-wrapper @@classSliderWrap}">
     @@loop("blocks/card/card.html", [
       {

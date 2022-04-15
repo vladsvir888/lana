@@ -1,6 +1,21 @@
 <main class="catalog-page">
   <div class="container">
-    @@include("blocks/breadcrumbs/breadcrumbs.html")
+    <ul class="breadcrumbs">
+      @@loop("blocks/breadcrumbs/breadcrumb-item.html", [
+        {
+          "text": "Главная",
+          "isActive": false,
+        },
+        {
+          "text": "Каталог",
+          "isActive": false,
+        },
+        {
+          "text": "Выдача товаров",
+          "isActive": true,
+        },
+      ])
+    </ul>
   </div>
   <section class="catalog-page__catalog-section section">
     <div class="container">
@@ -66,6 +81,13 @@
       <h2 class="section-title">Информация для покупателя</h2>
       @@include("blocks/tabs/tabs.html", {
         "class": "tabs--pb-18",
+        "icon": true,
+        "textBtn1": "Доставка и оплата",
+        "textBtn2": "ОБМЕН И ВОЗВРАТ",
+        "textBtn3": "Размеры",
+        "textBtn4": "Акции",
+        "isBtn4": true,
+        "isContentTab4": true,
       })
       @@include("blocks/marquee/marquee.html")
     </div>

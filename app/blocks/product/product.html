@@ -1,0 +1,168 @@
+<main class="product-page">
+  <div class="container">
+    <ul class="breadcrumbs">
+      @@loop("blocks/breadcrumbs/breadcrumb-item.html", [
+        {
+          "text": "Главная",
+          "isActive": false,
+        },
+        {
+          "text": "Каталог",
+          "isActive": false,
+        },
+        {
+          "text": "Карточка товара",
+          "isActive": true,
+        },
+      ])
+    </ul>
+  </div>
+  <article class="product-page__product-card">
+    <div class="container product-page__product-container">
+      <h2 class="product-page__product-title">МУЖСКАЯ КУРТКА (СКАНДИНАВКА БЕЖЕВАЯ) С КАПЮШОНОМ</h2>
+      <div class="product-page__wrap">
+        <div class="product-page__slider-block">
+          <div class="swiper galleryMain product-page__gallery-main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_big.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_big.jpg"/>
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_big.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_big.jpg"/>
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_big.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_big.jpg"/>
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_big.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_big.jpg"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper galleryThumbs product-page__gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_small.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_small.jpg" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_small.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_small.jpg" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_small.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_small.jpg" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/product-card/img_small.webp" type="image/webp">
+                  <img alt="img" class="product-page__slider-img lazy" src="./assets/images/pixel.png" data-src="./assets/images/product-card/img_small.jpg" />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__slider-btns">
+            <div class="swiper-button-next">
+              <img class="lazy product-page__btn-top" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-prev.png" alt="img">
+            </div>
+            <div class="swiper-button-prev">
+              <img class="lazy product-page__btn-prev" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-prev.png" alt="img">
+            </div>
+          </div>
+        </div>
+        <div class="product-page__filter-block">
+          @@include("blocks/filter/sort-size/sort-size.html", {
+            "title": "Размеры:",
+            "type": "size2",
+          })
+          @@include("blocks/filter/sort-size/sort-size.html", {
+            "title": "Рост:",
+            "type": "growth2",
+          })
+          <div class="product-page__material-info">
+            <div class="product-page__material-title">Материал:</div>
+            <div class="product-page__material-descr">
+              Снаружи ворсовая ткань «Скандинавка бежевая», внутри&nbsp;натуральная шерсть мериноса
+            </div>
+          </div>
+          @@include("blocks/filter/sort-size/sort-size.html", {
+            "title": "Расцветки:",
+            "type": "colors",
+          })
+          <div class="product-page__footer-filter">
+            <div class="product-page__filter-price">
+              8 000
+              <svg class="product-page__price-icon" viewBox="0 0 100 100">
+                <use xlink:href="./assets/images/sprite.svg#currency"></use>
+              </svg>
+            </div>
+            <div class="product-page__filter-basket">
+              <div class="counter">
+                <button class="counter__minus-btn minus-btn">
+                  <svg class="counter__icon" viewBox="0 0 100 100">
+                    <use xlink:href="./assets/images/sprite.svg#minus"></use>
+                  </svg>
+                </button>
+                <span class="counter__value">1</span>
+                <button class="counter__plus-btn plus-btn">
+                  <svg class="counter__icon" viewBox="0 0 100 100">
+                    <use xlink:href="./assets/images/sprite.svg#plus"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="basket">
+                <svg class="basket__icon" viewBox="0 0 100 100">
+                  <use xlink:href="./assets/images/sprite.svg#basket-2"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include("blocks/tabs/tabs.html", {
+        "class": "tabs--pb-6",
+        "icon": false,
+        "textBtn1": "Описание",
+        "textBtn2": "Состав",
+        "textBtn3": "Доставка",
+        "isBtn4": false,
+        "isContentTab4": false,
+      })
+    </div>
+  </article>
+  <div class="container product-page__middle-cards">
+    @@include("blocks/cards-wrap/cards-wrap.html", {
+      "classSlider": "cardSlider1",
+      "typeHeader": "third",
+      "classSliderWrap": "",
+    })
+  </div>
+  <section class="product-page__similar-products">
+    <div class="container">
+      @@include("blocks/cards-wrap/cards-wrap.html", {
+        "classSlider": "cardSlider1",
+        "typeHeader": "fourth",
+        "classSliderWrap": "",
+      })
+    </div>
+    @@include("blocks/marquee/marquee.html")
+  </section>
+  @@include("blocks/map/map.html")
+</main>

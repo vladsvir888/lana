@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   app.mobileCardSlider.init(); // blocks/cards-wrap
   app.showMoreParam.init(); // blocks/dropdown
   app.filterPlusMinus.init(); // blocks/filterPlusMinus
+  app.productSlider.init(); // blocks/product
 
   new WOW().init();
 

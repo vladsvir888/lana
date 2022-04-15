@@ -7,6 +7,10 @@
     padding-bottom: 18rem;
   }
 
+  &--pb-6 {
+    padding-bottom: 6rem;
+  }
+
   @media (max-width: $md) {
     grid-template-columns: 1fr;
   }

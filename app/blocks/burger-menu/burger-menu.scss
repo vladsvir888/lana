@@ -11,18 +11,19 @@
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
+
   // clip-path: polygon(0% 10%, 50% 10%, 55% 9%, 60% 10%, 100% 10%, 100% 100%, 0% 100%);
+  // background: var(--brown-gradient);
 
   // &::before {
-  //   position: absolute;
-  //   left: 50%;
-  //   top: 0;
-  //   transform: translateX(-50%);
   //   content: '';
-  //   clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-  //   background-color: red;
-  //   width: 2rem;
-  //   height: 1.3rem;
+  //   position: absolute;
+  //   top: 0.4rem;
+  //   left: 0.4rem;
+  //   right: 0.4rem;
+  //   bottom: 0.4rem;
+  //   background-color: var(--white);
+  //   clip-path: polygon(0% 10%, 50% 10%, 55% 9%, 60% 10%, 100% 10%, 100% 100%, 0% 100%);
   // }
 
   @media (max-width: $sm) {
@@ -119,6 +120,10 @@
       color: var(--black);
       border-bottom: 0.1rem solid var(--black);
     }
+  }
+
+  li { // after remove
+    position: relative;
   }
 }
 

@@ -1,0 +1,103 @@
+.info-page {
+  &__img {
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+
+    @media (max-width: $md) {
+      padding-bottom: 2.4rem;
+      height: 30rem;
+    }
+
+    &--pb {
+      padding-bottom: 4.4rem;
+    }
+  }
+
+  &__info-wrap {
+    @extend %text-20;
+
+    &:not(:last-child) {
+      padding-bottom: 5.3rem;
+
+      @media (max-width: $sm) {
+        padding-bottom: 3rem;
+      }
+    }
+
+    > * {
+      &:not(:last-child) {
+        padding-bottom: 1.7rem;
+      }
+    }
+  }
+
+  &__info-slider {
+    &:not(:last-child) {
+      padding-bottom: 6rem;
+    }
+
+    img {
+      @extend %cover;
+    }
+
+    .swiper-wrapper {
+      @media (min-width: 1025px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: static;
+      margin-top: 0;
+      width: auto;
+      height: auto;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 1.3rem;
+      height: 1.3rem;
+      background: var(--gray3);
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 0.5rem;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--gray2);
+      border-radius: 50%;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -0.4rem;
+        bottom: -0.4rem;
+        left: -0.4rem;
+        right: -0.4rem;
+        background: linear-gradient(273.52deg, #896d4d -42.26%, #cdb79c 99.15%);
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__slider-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1025px) {
+      display: none;
+    }
+  }
+}

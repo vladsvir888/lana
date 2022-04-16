@@ -1,5 +1,5 @@
 <div class="swiper-slide">
-  <article class="card">
+  <article class="card calc-wrap">
     <a href="#" class="card__link"></a>
     <div class="card__wrap">
       <picture>
@@ -9,7 +9,7 @@
       <h2 class="card__title">@@title</h2>
       <div class="card__first-inner">
         <span class="card__old-price">
-          @@oldPrice
+          <span class="old-price">@@oldPrice</span>
           <svg class="card__currency-old" viewBox="0 0 100 100">
             <use xlink:href="./assets/images/sprite.svg#currency"></use>
           </svg>
@@ -17,7 +17,7 @@
         <span class="card__discount">@@discount</span>
       </div>
       <span class="card__current-price">
-        @@currentPrice
+        <span class="current-price">@@currentPrice</span>
         <svg class="card__currency-current" viewBox="0 0 100 100">
           <use xlink:href="./assets/images/sprite.svg#currency"></use>
         </svg>

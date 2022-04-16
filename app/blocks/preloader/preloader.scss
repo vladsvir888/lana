@@ -1,0 +1,28 @@
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  &__wrap {
+    animation: loader 2s linear infinite;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  &__icon {
+    fill: var(--brown);
+  }
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.video-iframe {
+  opacity: 0;
+  pointer-events: none;
+}

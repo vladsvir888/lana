@@ -23,6 +23,7 @@ html {
   --white: #fff;
   --brown: #c8b196;
   --brown2: #714615;
+  --brown3: #cdb79c;
   --brown-gradient: linear-gradient(273.52deg, #896d4d -42.26%, #cdb79c 99.15%);
   --greige: #ccc7c1;
   --gray: #f9f7f4;
@@ -31,6 +32,7 @@ html {
   --gray4: #c4c4c4;
   --gray5: #afafaf;
   --gray6: #dbdbdb;
+  --gray7: #e4e4e2;
   --footer-bg: #2c2c2c;
 }
 
@@ -146,6 +148,7 @@ img {
   justify-content: space-between;
   border-radius: 0.5rem;
   border: 0.1rem solid var(--gray5);
+
   @extend %text-20;
 
   &__minus-btn,
@@ -185,5 +188,26 @@ img {
     fill: var(--white);
     width: 2rem;
     height: 2rem;
+  }
+}
+
+.progress {
+  padding: 5rem 0;
+
+  &__ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+
+    @media (max-width: $md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__link {
+    @extend %text-30;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--black);
   }
 }

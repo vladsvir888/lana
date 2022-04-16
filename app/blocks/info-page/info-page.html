@@ -1,0 +1,112 @@
+<main class="info-page">
+  <h1 class="visually-hidden">Информация для наших покупателей</h1>
+  <div class="container">
+    <ul class="breadcrumbs">
+      @@loop("blocks/breadcrumbs/breadcrumb-item.html", [
+        {
+          "text": "Главная",
+          "isActive": false,
+        },
+        {
+          "text": "Каталог",
+          "isActive": false,
+        },
+        {
+          "text": "Карточка товара",
+          "isActive": false,
+        },
+        {
+          "text": "О шерсти мериноса",
+          "isActive": true,
+        },
+      ])
+    </ul>
+  </div>
+  <section class="info-page__about-wool section">
+    <div class="container">
+      <h2 class="section-title">О шерсти мериноса</h2>
+      <picture>
+        <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/merinos.webp" type="image/webp">
+        <img class="info-page__img info-page__img--pb lazy" src="./assets/images/pixel.png" data-src="./assets/images/merinos.jpg" alt="img">
+      </picture>
+      <div class="info-page__info-wrap">
+        <p>
+          С древнейших времён и по сей день меринос является одним из самых известных и популярных видов шерсти. В отношении качества шерсти, мериноса не может превзойти ни одна другая порода овец, а именно овцой является этот обладатель роскошной тонкорунной шерсти.
+        </p>
+        <p>
+          К концу 16 века Испания уже была признанным лидером в разведении мериносовых овец. Более того, она была монополистом в этой отрасли: вплоть до того момента, когда испанская морская армада не потерпела поражение от Англии. Однако только спустя две сотни лет после вывоза мериносов из поражённой державы, англичане смогли добиться успехов в овцеводстве, сравнимых с Испанией.
+        </p>
+        <p>
+          В 18 веке мериносы были завезены в Австралию, где условия для их разведения оказались идеальными, и с этого момента именно она стала главным поставщиком шерсти в страны Европы.
+        </p>
+        <p>
+          Секрет мериносовой шерсти — очень тонкое волокно, позволяющее животным противостоять суровому климату и колебаниям температуры от очень низких зимних до экстремально высоких летних. Для производства изделий из мериноса состригается шерсть исключительно с холки животных.
+        </p>
+      </div>
+      <div class="swiper infoSlider info-page__info-slider">
+        <div class="info-page__slider-header">
+          <div class="slider-btns">
+            <div class="swiper-button-prev">
+              <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-prev.png" alt="img">
+            </div>
+            <div class="swiper-button-next">
+              <img class="lazy slider-btns__arrow" src="./assets/images/pixel.png" data-src="./assets/images/icons/slide-btn-next.png" alt="img">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/merinos2.webp" type="image/webp">
+              <img class="lazy" src="./assets/images/pixel.png" data-src="./assets/images/merinos2.jpg" alt="img">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/merinos2.webp" type="image/webp">
+              <img class="lazy" src="./assets/images/pixel.png" data-src="./assets/images/merinos2.jpg" alt="img">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/merinos2.webp" type="image/webp">
+              <img class="lazy" src="./assets/images/pixel.png" data-src="./assets/images/merinos2.jpg" alt="img">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="info-page__info-wrap">
+        <p>
+          Тонкорунные мериносы подразделяются на несколько типов, имеющих существенные различия по виду и качеству шерсти. Тип «файн» – шерсть бесскладчатых овец с очень тонкой шерстью. Несколько толще шерсть типа «медиум». И, наконец, шерсть с наиболее толстым волосом - «стронг», получаемая с самых крупных животных. Однако толщина шерсти не сказывается на её благородных свойствах: высокое качество руна присуще всем типам овец-мериносов.
+        </p>
+        <p>
+          Стрижка этих овец проводится каждую весну. В год овца приносит количество шерсти, достаточное для изготовления примерно пяти предметов одежды.
+        </p>
+      </div>
+      <picture>
+        <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/merinos.webp" type="image/webp">
+        <img class="info-page__img lazy" src="./assets/images/pixel.png" data-src="./assets/images/merinos.jpg" alt="img">
+      </picture>
+    </div>
+  </section>
+  <section class="info-page__care section">
+    <div class="container">
+      <h2 class="section-title">Уход за шерстью</h2>
+      <div class="info-page__info-wrap">
+        <p>
+          Мериносовая шерсть длинная, мягкая и эластичная, способна долгое время держать объём и форму, а благодаря естественному завитку отличается особой упругостью. Эта шерсть обладает природной белизной с гармоничной палитрой цветовых нюансов.
+        </p>
+        <p>
+          Шерсть мериноса отличает высокая гигроскопичность, она способна впитывать до 33% влаги от своего объёма, благодаря чему тело человека всегда остаётся в сухом тепле. В волокнах шерсти — миллионы воздушных подушечек, способствующих сохранению тепла и в холод, и в жару.
+        </p>
+        <p>
+          Меринос является идеальным материалом для детской одежды, т.к. не раздражает кожу.
+        </p>
+        <p>
+          Все эти качества делают шерсть мериноса не только незаменимой в любой одежде, от повседневной до спортивной, но и служат залогом крепкого, здорового сна.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>

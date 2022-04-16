@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   app.showMoreParam.init(); // blocks/dropdown
   app.filterPlusMinus.init(); // blocks/filterPlusMinus
   app.productSlider.init(); // blocks/product
+  app.infoSlider.init(); // blocks/info-page
+  app.thanks.init(); // blocks/thanks
+  app.preloader.init(); // blocks/preloader
+  app.validate.init(); // blocks/basket-page
 
   new WOW().init();
 

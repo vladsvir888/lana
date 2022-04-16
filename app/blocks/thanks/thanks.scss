@@ -1,0 +1,88 @@
+.popup-thanks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  &__wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    background: var(--brown-gradient);
+    padding: 0.5rem;
+    width: 63rem;
+    border-radius: 0.5rem;
+
+    @media (max-width: $lg) {
+      width: 44rem;
+    }
+
+    @media (max-width: $sm) {
+      width: 30rem;
+    }
+  }
+
+  &__inner {
+    padding: 10rem 8rem;
+    background: var(--brown-gradient);
+    border: 0.1rem solid var(--white);
+    border-radius: 0.5rem;
+
+    > * {
+      &:not(:last-child) {
+        padding-bottom: 2.8rem;
+
+        @media (max-width: $lg) {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    @media (max-width: $lg) {
+      padding: 5rem 3rem;
+    }
+
+    @media (max-width: $sm) {
+      padding: 3rem;
+    }
+  }
+
+  &__title {
+    @extend %text-50;
+  }
+
+  &__descr {
+    @extend %text-20;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__icon-close {
+    width: 2.3rem;
+    height: 2.3rem;
+    fill: var(--white);
+    pointer-events: none;
+  }
+}
+
+.popup-thanks.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}

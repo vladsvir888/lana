@@ -76,6 +76,10 @@
     display: flex;
     justify-content: space-between;
     font-weight: 700;
+
+    @media (max-width: $sm) {
+      justify-content: center;
+    }
   }
 
   &__text {

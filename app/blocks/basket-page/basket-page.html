@@ -1,0 +1,317 @@
+<main class="basket-page">
+  <h1 class="visually-hidden">Страница с корзиной компании</h1>
+  <div class="container">
+    <ul class="breadcrumbs">
+      @@loop("blocks/breadcrumbs/breadcrumb-item.html", [
+        {
+          "text": "Главная",
+          "isActive": false,
+        },
+        {
+          "text": "Каталог",
+          "isActive": false,
+        },
+        {
+          "text": "Карточка товара",
+          "isActive": false,
+        },
+        {
+          "text": "Ваша корзина",
+          "isActive": true,
+        },
+      ])
+    </ul>
+  </div>
+  <section class="basket-page__basket section">
+    <div class="container">
+      <h2 class="basket-page__basket-title section-title">Ваша корзина</h2>
+      <div class="basket-page__basket-wrap">
+        <div class="basket-page__basket-item">
+          <div class="basket-page__basket-start">
+            <picture>
+              <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/basket/1.webp" type="image/webp">
+              <img class="basket-page__img lazy" src="./assets/images/pixel.png" data-src="./assets/images/basket/1.jpg" alt="img">
+            </picture>
+          </div>
+          <div class="basket-page__basket-end">
+            <div class="basket-page__basket-inner">
+              <div class="basket-page__basket-left">
+                <div class="basket-page__basket-info">
+                  <div class="basket-page__info-title">МУЖСКАЯ КУРТКА (СКАНДИНАВКА БЕЖЕВАЯ) С КАПЮШОНОМ </div>
+                  <div class="basket-page__info-descr">
+                    <span>Размер: XXXL(54)</span>
+                    <span>Рост: 170</span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-page__basket-right">
+                <div class="basket-page__price">
+                  8 000
+                  <svg class="basket-page__price-icon" viewBox="0 0 100 100">
+                    <use xlink:href="./assets/images/sprite.svg#currency"></use>
+                  </svg>
+                </div>
+                <div class="counter">
+                  <button class="counter__minus-btn minus-btn">
+                    <svg class="counter__icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <span class="counter__value">1</span>
+                  <button class="counter__plus-btn plus-btn">
+                    <svg class="counter__icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="basket-page__second-price">
+                  <span>Cумма</span>
+                  <div class="basket-page__price">
+                    16 000
+                    <svg class="basket-page__price-icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#currency"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="basket-page__btn-close">
+              <svg class="basket-page__close-icon" viewBox="0 0 100 100">
+                <use xlink:href="./assets/images/sprite.svg#close-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="basket-page__basket-item">
+          <div class="basket-page__basket-start">
+            <picture>
+              <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/basket/1.webp" type="image/webp">
+              <img class="basket-page__img lazy" src="./assets/images/pixel.png" data-src="./assets/images/basket/1.jpg" alt="img">
+            </picture>
+          </div>
+          <div class="basket-page__basket-end">
+            <div class="basket-page__basket-inner">
+              <div class="basket-page__basket-left">
+                <div class="basket-page__basket-info">
+                  <div class="basket-page__info-title">МУЖСКАЯ КУРТКА (СКАНДИНАВКА БЕЖЕВАЯ) С КАПЮШОНОМ </div>
+                  <div class="basket-page__info-descr">
+                    <span>Размер: XXXL(54)</span>
+                    <span>Рост: 170</span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-page__basket-right">
+                <div class="basket-page__price">
+                  8 000
+                  <svg class="basket-page__price-icon" viewBox="0 0 100 100">
+                    <use xlink:href="./assets/images/sprite.svg#currency"></use>
+                  </svg>
+                </div>
+                <div class="counter">
+                  <button class="counter__minus-btn minus-btn">
+                    <svg class="counter__icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <span class="counter__value">1</span>
+                  <button class="counter__plus-btn plus-btn">
+                    <svg class="counter__icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="basket-page__second-price">
+                  <span>Cумма</span>
+                  <div class="basket-page__price">
+                    16 000
+                    <svg class="basket-page__price-icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#currency"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="basket-page__btn-close">
+              <svg class="basket-page__close-icon" viewBox="0 0 100 100">
+                <use xlink:href="./assets/images/sprite.svg#close-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="basket-page__basket-item">
+          <div class="basket-page__basket-start">
+            <picture>
+              <source srcset="./assets/images/pixel.png" data-srcset="./assets/images/basket/1.webp" type="image/webp">
+              <img class="basket-page__img lazy" src="./assets/images/pixel.png" data-src="./assets/images/basket/1.jpg" alt="img">
+            </picture>
+          </div>
+          <div class="basket-page__basket-end">
+            <div class="basket-page__basket-inner">
+              <div class="basket-page__basket-left">
+                <div class="basket-page__basket-info">
+                  <div class="basket-page__info-title">МУЖСКАЯ КУРТКА (СКАНДИНАВКА БЕЖЕВАЯ) С КАПЮШОНОМ </div>
+                  <div class="basket-page__info-descr">
+                    <span>Размер: XXXL(54)</span>
+                    <span>Рост: 170</span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-page__basket-right">
+                <div class="basket-page__price">
+                  8 000
+                  <svg class="basket-page__price-icon" viewBox="0 0 100 100">
+                    <use xlink:href="./assets/images/sprite.svg#currency"></use>
+                  </svg>
+                </div>
+                <div class="counter">
+                  <button class="counter__minus-btn minus-btn">
+                    <svg class="counter__icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <span class="counter__value">1</span>
+                  <button class="counter__plus-btn plus-btn">
+                    <svg class="counter__icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="basket-page__second-price">
+                  <span>Cумма</span>
+                  <div class="basket-page__price">
+                    16 000
+                    <svg class="basket-page__price-icon" viewBox="0 0 100 100">
+                      <use xlink:href="./assets/images/sprite.svg#currency"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="basket-page__btn-close">
+              <svg class="basket-page__close-icon" viewBox="0 0 100 100">
+                <use xlink:href="./assets/images/sprite.svg#close-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="basket-page__basket-result">
+          <div class="basket-page__result-left">
+            <div class="basket-page__result-title">Общее кол-во:</div>
+            <div class="basket-page__result-value">
+              <span>6</span>
+              <span>шт</span>
+            </div>
+          </div>
+          <div class="basket-page__result-right">
+            <div class="basket-page__result-title">Итого:</div>
+            <div class="basket-page__result-value">
+              <span>48 000</span>
+              <svg class="basket-page__price-icon" viewBox="0 0 100 100">
+                <use xlink:href="./assets/images/sprite.svg#currency"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="basket-page__order section">
+    <div class="container">
+      <h2 class="basket-page__basket-title section-title">оформление заказа</h2>
+      <form action="/" class="basket-page__order-form" autocomplete="off">
+        <div class="basket-page__order-wrap">
+
+          <div class="basket-page__order-item">
+            <span class="basket-page__input-title">Имя*</span>
+            <input class="basket-page__input" type="text" id="name">
+          </div>
+
+          <div class="basket-page__order-item">
+            <span class="basket-page__input-title">Отчество*</span>
+            <input class="basket-page__input" type="text" id="patronymic">
+          </div>
+
+          <div class="basket-page__order-item">
+            <span class="basket-page__input-title">Фамилия*</span>
+            <input class="basket-page__input" type="text" id="surname">
+          </div>
+
+          <div class="basket-page__order-item">
+            <span class="basket-page__input-title">Телефон</span>
+            <input class="basket-page__input" type="text" id="phone">
+          </div>
+
+          <div class="basket-page__order-item basket-page__order-item--getting">
+            <span class="basket-page__input-title">Способ получения</span>
+            <div class="basket-page__radio-wrap">
+              <label class="basket-page__order-label">
+                <input name="way_get" type="radio" class="input basket-page__radio-input" checked>
+                <span class="basket-page__radio-style">
+                  <span></span>
+                </span>
+                <svg class="basket-page__get-icon" viewBox="0 0 100 100">
+                  <use xlink:href="./assets/images/sprite.svg#get-icon-1"></use>
+                </svg>
+                <span class="basket-page__radio-text">
+                  <span class="basket-page__radio-text--bigger">Самовывоз</span>
+                  <span class="basket-page__radio-text--smaller">(по договоренности)</span>
+                </span>
+              </label>
+              <label class="basket-page__order-label">
+                <input name="way_get" type="radio" class="input basket-page__radio-input">
+                <span class="basket-page__radio-style">
+                  <span></span>
+                </span>
+                <svg class="basket-page__get-icon" viewBox="0 0 100 100">
+                  <use xlink:href="./assets/images/sprite.svg#get-icon-2"></use>
+                </svg>
+                <span class="basket-page__radio-text">
+                  <span class="basket-page__radio-text--bigger">Доставка</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="basket-page__order-item basket-page__order-item--textarea">
+            <span class="basket-page__input-title">Адрес доставки</span>
+            <textarea class="basket-page__textarea"></textarea>
+          </div>
+
+          <div class="basket-page__order-item basket-page__order-item--payment">
+            <span class="basket-page__input-title">Способ оплаты</span>
+            <div class="basket-page__radio-wrap">
+              <label class="basket-page__order-label">
+                <input name="way_payment" type="radio" class="input basket-page__radio-input" checked>
+                <span class="basket-page__radio-style">
+                  <span></span>
+                </span>
+                <svg class="basket-page__get-icon" viewBox="0 0 100 100">
+                  <use xlink:href="./assets/images/sprite.svg#pay-icon-1"></use>
+                </svg>
+                <span class="basket-page__radio-text">
+                  <span class="basket-page__radio-text--bigger">При получении</span>
+                </span>
+              </label>
+              <label class="basket-page__order-label">
+                <input name="way_payment" type="radio" class="input basket-page__radio-input">
+                <span class="basket-page__radio-style">
+                  <span></span>
+                </span>
+                <svg class="basket-page__get-icon" viewBox="0 0 100 100">
+                  <use xlink:href="./assets/images/sprite.svg#pay-icon-2"></use>
+                </svg>
+                <span class="basket-page__radio-text">
+                  <span class="basket-page__radio-text--bigger">Онлайн на сайте</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="basket-page__order-bottom">
+          <div class="basket-page__order-text">Нажимая кнопку «Оформить заказ» вы соглашаетесь с условиями обработки персональных данных</div>
+          <button class="basket-page__submit-btn" type="submit">Оформить заказ</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>

@@ -35,6 +35,10 @@
   &__info-slider {
     &:not(:last-child) {
       padding-bottom: 6rem;
+
+      @media (max-width: $sm) {
+        padding-bottom: 0;
+      }
     }
 
     img {

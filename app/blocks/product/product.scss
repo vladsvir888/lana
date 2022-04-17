@@ -162,8 +162,12 @@
   &__footer-filter {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -2rem;
 
     > * {
+      margin-bottom: 2rem;
+
       &:not(:last-child) {
         padding-right: 11.6rem;
 
